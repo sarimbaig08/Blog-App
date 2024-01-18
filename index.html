@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <!-- <video autoplay muted loop id src="./video/snow.mp4"></video> -->
+  <body>
+    <div class="mainDiv">
+      <div class="login">
+        <div class="login-div"></div>
+        <h1>Login</h1>
+        <input
+          type="text"
+          name="login"
+          id="loginEmail"
+          placeholder="Enter Your Email"
+        />
+        <input
+          type="password"
+          name="login"
+          id="loginPass"
+          placeholder="Enter Password"
+        />
+        <br />
+        <br />
+        <button onclick="loginFunc()">Login</button>
+      </div>
+
+      <div class="login">
+        <div class="signup-div"></div>
+        <h1>Signup</h1>
+        <input
+          type="text"
+          name="login"
+          id="signName"
+          placeholder="Enter Your Full Name"
+        />
+        <input
+          type="text"
+          name="login"
+          id="uEmail"
+          placeholder="Enter Your Email"
+        />
+        <input
+          type="number"
+          name="login"
+          id="uPhone"
+          placeholder="Enter Phone Number"
+        />
+        <input
+          type="password"
+          name="login"
+          id="pass"
+          placeholder="Enter  Password"
+        />
+        <br />
+        <br />
+        <button onclick="signupFunc()" id="signupBtn">Signup</button>
+        <br />
+        <!-- <p>ALready Signed in? <span>Login</span></p> -->
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./js/app.js"></script>
+</html>

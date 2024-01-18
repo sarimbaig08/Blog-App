@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mainDiv {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  /* background-clip: url(./video/snow.mp4); */
+  background: url(./video/bg2.jpg) center no-repeat;
+  background-size: cover;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0;
+  gap: 20px;
+}
+
+.login {
+  min-height: 18rem;
+  width: 18rem;
+  background-color: rgb(112, 112, 112);
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  padding: 30px 0;
+}
+/* .login-div {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  display: none;
+} */
+/* .signup-div {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+} */
+
+.login h1 {
+  font-size: large;
+  font-weight: 600;
+  margin: 0;
+  /* margin-top: 1rem; */
+}
+.login input {
+  margin-top: 2rem;
+  background-color: rgb(99, 99, 99);
+
+  /* background-color: black; */
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.login button {
+  background-color: rgb(90, 90, 90);
+  padding: 0.5rem 5rem;
+  /* margin-bottom: 10px; */
+  border-radius: 5px;
+}
+.login button:hover {
+  background-color: rgb(75, 75, 75);
+}
+.signup {
+  height: 25rem;
+  width: 20rem;
+  background-color: rgb(196, 193, 193);
+  opacity: 0.3;
+}
+
+.sign {
+  position: relative;
+  top: 100px;
+}
+
+@media (min-width: 700px) {
+  .mainDiv {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .login {
+    width: 20rem;
+  }
+}

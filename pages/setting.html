@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    #preloader {
+      background: white url(../video/loader.gif) no-repeat center;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 10000;
+    }
+  </style>
+  <body>
+    <div id="preloader"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="./dashboard.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="./myBlogs.html">My Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="./setting.html">Settings</a>
+            </li>
+          </ul>
+          <div
+            class="fst-italic d-flex flex-column flex-lg-row align-items-lg-center gap-3"
+          >
+            <h5 id="userName"></h5>
+            <button class="btn btn-secondary" onclick="logoutFunc()">
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- main body blogs -->
+    <section class="container">
+      <h2 class="text-center my-5">Settings</h2>
+      <div class="d-flex align-items-center gap-5">
+        <p class="fw-medium m-0">Profile Picture :</p>
+        <img id="uPicture" />
+      </div>
+      <div>
+        <p id="uName"><span class="fw-medium">User Name :</span></p>
+      </div>
+      <div>
+        <p id="uEmail"><span class="fw-medium">Email Address :</span></p>
+      </div>
+      <div>
+        <p id="uPhone"><span class="fw-medium">Phone Number :</span></p>
+      </div>
+      <div>
+        <p id="UserId"><span class="fw-medium">User Id :</span></p>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" src="../js/setting.js"></script>
+</html>
